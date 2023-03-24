@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"mecanum_project\startup_stm32f407xx.o"
+"mecanum_project\main.o"
+"mecanum_project\stm32f4xx_it.o"
+"mecanum_project\stm32f4xx_hal_msp.o"
+"mecanum_project\stm32f4xx_hal_tim.o"
+"mecanum_project\stm32f4xx_hal_tim_ex.o"
+"mecanum_project\stm32f4xx_hal_rcc.o"
+"mecanum_project\stm32f4xx_hal_rcc_ex.o"
+"mecanum_project\stm32f4xx_hal_flash.o"
+"mecanum_project\stm32f4xx_hal_flash_ex.o"
+"mecanum_project\stm32f4xx_hal_flash_ramfunc.o"
+"mecanum_project\stm32f4xx_hal_gpio.o"
+"mecanum_project\stm32f4xx_hal_dma_ex.o"
+"mecanum_project\stm32f4xx_hal_dma.o"
+"mecanum_project\stm32f4xx_hal_pwr.o"
+"mecanum_project\stm32f4xx_hal_pwr_ex.o"
+"mecanum_project\stm32f4xx_hal_cortex.o"
+"mecanum_project\stm32f4xx_hal.o"
+"mecanum_project\stm32f4xx_hal_exti.o"
+"mecanum_project\stm32f4xx_hal_uart.o"
+"mecanum_project\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "Mecanum_project\Mecanum_project.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Mecanum_project.map" -o Mecanum_project\Mecanum_project.axf

@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"mecanum_robot\startup_stm32f407xx.o"
+"mecanum_robot\main.o"
+"mecanum_robot\stm32f4xx_it.o"
+"mecanum_robot\stm32f4xx_hal_msp.o"
+"mecanum_robot\stm32f4xx_hal_tim.o"
+"mecanum_robot\stm32f4xx_hal_tim_ex.o"
+"mecanum_robot\stm32f4xx_hal_rcc.o"
+"mecanum_robot\stm32f4xx_hal_rcc_ex.o"
+"mecanum_robot\stm32f4xx_hal_flash.o"
+"mecanum_robot\stm32f4xx_hal_flash_ex.o"
+"mecanum_robot\stm32f4xx_hal_flash_ramfunc.o"
+"mecanum_robot\stm32f4xx_hal_gpio.o"
+"mecanum_robot\stm32f4xx_hal_dma_ex.o"
+"mecanum_robot\stm32f4xx_hal_dma.o"
+"mecanum_robot\stm32f4xx_hal_pwr.o"
+"mecanum_robot\stm32f4xx_hal_pwr_ex.o"
+"mecanum_robot\stm32f4xx_hal_cortex.o"
+"mecanum_robot\stm32f4xx_hal.o"
+"mecanum_robot\stm32f4xx_hal_exti.o"
+"mecanum_robot\stm32f4xx_hal_uart.o"
+"mecanum_robot\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "mecanum_robot\mecanum_robot.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "mecanum_robot.map" -o mecanum_robot\mecanum_robot.axf
